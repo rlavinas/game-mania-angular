@@ -1,0 +1,89 @@
+.rodape {
+    height: 130px;
+    background: #021C33;
+}
+
+.rodape_atendimento {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rodape_atendimento_telefone {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rodape_atendimento_email {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rodape_atendimento_alinhamento {
+    justify-content: left;
+}
+
+.rodape_tamanho_atendimento {
+    height: 20%;
+    width: 100%;
+}
+
+.botoes_naveg {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.rodape_botoes {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.rodape_col_row {
+    display: flex;
+    height: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .rodape_atendimento, .rodape_atendimento_telefone, .rodape_atendimento_email {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+    }
+
+    .rodape_botoes {
+        align-items: flex-start;
+        height: 50px;
+    }
+
+    .rodape_atendimento_alinhamento span {
+        justify-content: center;
+    }
+
+    .rodape_tamanho_atendimento {
+        height: 20px!important;
+    }    
+
+    .rodape {
+        height: 290px;
+    }
+
+    #div_quebra {
+        display: none;
+    }
+}

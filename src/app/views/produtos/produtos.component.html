@@ -1,0 +1,47 @@
+<section id="carProdutos_01_01" class="container produto">
+    <div id="carouselExampleControls_01_01" class="carousel slide multi-item-carousel h-100" data-bs-ride="carousel"  data-bs-interval="0">
+        <div class="carousel-inner" role="listbox">
+            <div [className]="i == 0 ? 'linha_carousel carousel-item active' : 'linha_carousel carousel-item'" *ngFor="let prod of Produtos1; let i = index">
+                <app-produto 
+                        [Imagem]="Produtos1[i].Imagem"
+                        [Descricao]="Produtos1[i].Descricao"
+                        [Valor_anterior]="Produtos1[i].Valor_anterior"
+                        [Valor_novo]="Produtos1[i].Valor_novo"
+                        [Parcelamento]="Produtos1[i].Parcelamento"
+                ></app-produto>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls_01_01" data-bs-slide="prev">                
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls_01_01" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </button>
+    </div>
+</section>    
+
+<section id="carProdutos_02_01" class="container produto">
+    <div id="carouselExampleControls_02_01" class="carousel slide h-100" data-bs-ride="carousel"  data-bs-interval="0">
+        <div class="carousel-inner">
+            <div [className]="i == 0 ? 'linha_carousel carousel-item active' : 'linha_carousel carousel-item'" *ngFor="let prod of Produtos2; let i = index">
+                <app-produto 
+                        [Imagem]="Produtos2[i].Imagem"
+                        [Descricao]="Produtos2[i].Descricao"
+                        [Valor_anterior]="Produtos2[i].Valor_anterior"
+                        [Valor_novo]="Produtos2[i].Valor_novo"
+                        [Parcelamento]="Produtos2[i].Parcelamento"
+                ></app-produto>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls_02_01" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls_02_01" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </button>
+    </div>
+</section>  

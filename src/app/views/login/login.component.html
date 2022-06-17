@@ -1,0 +1,26 @@
+<section class="container login">
+    <form id="formLogin" class="container formulario" (ngSubmit)="efetuarLogin()">
+          <div class="form-group" style="height:40px;"></div>
+          <div class="d-flex form-group justify-content-center" style="height:40px;"><h5>Login do Cliente</h5></div>
+          <div class="d-flex form-group" style="height:50px;"><p>Tenha acesso aos seus pedidos de forma mais fácil</p></div>
+          <div class="d-flex form-group" style="height:10px;"><span id="msgErro"></span></div>
+          <div class="d-flex form-group" style="height:10px;"></div>
+          <div class="form-group">
+            <label for="lblEmail">E-mail:</label>
+            <input type="email" class="form-control" id="edtEmail" aria-describedby="emailHelp" placeholder="Ex. carlossilva@gmail.com" [(ngModel)]="userModel.email">
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group">
+            <label for="lblSenha">Senha:</label>
+            <input type="password" class="form-control" id="edtSenha" placeholder="" [(ngModel)]="userModel.password">
+            <a href="#"><h6>Esqueci minha senha</h6></a>
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="d-flex justify-content-center">
+            <button type="button" (click)="envLogin()" class="btn btn-primary">Entrar</button>
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group" style="height:20px;"><p style="text-align:left;">Não tem cadastro?</p></div>
+          <div class="form-group" style="height:20px;"><a href="#"><h6>Cadastre-se</h6></a></div>
+    </form>
+</section> 

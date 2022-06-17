@@ -1,0 +1,27 @@
+<section id="menubar" class="container d-flex justify-content-center align-items-center menu shadow">
+    <div id="div_pesquisa">
+        <div class="input-group input-group-sm mb-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="pesquisa"><img class="lupa_pesquisa" src="../assets/images/Lupa Pesquisa.png"></span>
+            </div>
+            <input type="text" class="form-control" id="pesquisa" placeholder="pesquise aqui..." aria-label="Pesquisa" aria-describedby="pesquisa" onfocus="this.value='';" onblur="this.value='';">
+        </div>
+    </div>
+    <div id="div_menubar" class="d-flex justify-content-center">
+        <nav id="navbar">
+            <a href="#">Games</a>
+            <a href="#">Console</a>
+            <a href="#">Notebooks</a>
+            <a href="#">Desktops</a>                
+            <a href="#">Celulares</a>
+            <a href="#">Tablets</a>
+            <a href="#">Acessórios</a>
+        </nav>
+    </div>
+    <div id="div_navbar" class="d-flex justify-content-end">            
+        <a (click)="AbreMenu()">
+            <div id="menubutton" class="d-flex justify-content-end">            
+            </div>
+        </a>
+    </div>
+</section>

@@ -1,0 +1,118 @@
+/* MENU */
+.menu {
+    background-color: #1C373F;
+    height: 37px;
+}
+
+.lupa_pesquisa {
+    width: 15px;
+    height: 15px;
+  }
+
+.menu a {
+    text-decoration: none;
+    color:aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color:rgb(246, 158, 50);
+}
+
+#menubutton {
+    display: none!important;
+    height: 30px;
+    width: 30px;
+    background-image: url("/assets/images/menu_bar.svg");
+}
+
+#navbar {
+    display: flex;
+}
+
+#div_pesquisa {
+    width: 0px;
+    display: none;
+}
+
+#div_menubar {
+    display: flex;
+    width: 100%;
+}
+
+#div_navbar {
+    width: 0px;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #menubutton {
+        display: flex!important;
+        float: right;
+        height: 30px;
+        width: 30px;
+    }
+    
+    #div_pesquisa {
+        width: 90%;
+        display: block;
+    }
+    
+    #div_navbar {
+        display: flex;
+        width: 10%;
+    }
+
+    #div_menubar {
+        position: absolute;
+        top: 37px;
+        float: left;
+        display: none;
+        width: 200px;
+        justify-content: left;
+        background-color: #021C33;
+    }
+
+    .div_menubar_exibe {
+        display: flex!important;
+    }
+
+    #div_navbar a {
+        margin: 0px;
+    }
+
+    #menubar {
+        justify-content:right!important;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        justify-content: center!important;
+        width: 100%;
+    }
+
+    #navbar a {
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    } 
+
+    .form-control#pesquisa {
+        background-color: #1C373F!important;
+        color: #bfc1c3!important;
+        border: 0px!important;
+        width: 100%;
+    }
+    
+    .input-group-text#pesquisa {
+        background-color: #1C373F!important;
+        border: 0px!important;
+    }
+    
+    .input-group>.form-control#pesquisa {
+        width: 70%!important;
+    }
+}

@@ -1,0 +1,49 @@
+.cabecalho {
+  background-color: #021C33;
+  padding: 10px;
+}
+
+#img_logo {
+  width: 139px;
+  height: 91px;
+}
+
+.botoes_naveg {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.lupa_pesquisa {
+  width: 15px;
+  height: 15px;
+}
+
+.form-control#pesquisa {
+  background-color: #021C33!important;
+  color: #bfc1c3!important;
+  border: 0px!important;
+  width: 40px;
+}
+
+.input-group-text#pesquisa {
+  background-color: #021C33!important;
+  border: 0px!important;
+}
+
+.input-group>.form-control#pesquisa {
+  width: 30px!important;
+}
+
+@media only screen and (max-width: 768px) {
+    #img_logo {
+      width: 89px;
+      height: 61px;
+    }
+
+    .botoes_naveg {
+      width: 22px;
+      height: 22px;
+      margin-left: 8px;
+    }
+}

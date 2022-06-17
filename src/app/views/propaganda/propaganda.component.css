@@ -1,0 +1,151 @@
+.propaganda {
+    height: 380px;
+    background: url("/assets/images/Propaganda_fundo.png");
+    background-size: cover;
+}
+
+.img_propaganda {
+    border-radius: 10px;
+    width: 60%;
+}
+
+.texto_propaganda {
+    height: 380px;
+}
+
+.imagem_propaganda {
+    float: left;
+}
+
+#txt_nome_propaganda {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#txt_nome_propaganda span {
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.m-top-20 {
+    margin-top: 15px;
+}
+
+.m-bottom-20 {
+    margin-bottom: 15px;
+}
+
+#button_confira {
+    height: 42px;
+    color: #FFFFFF;
+    background-color: #C5581A;
+    border-color: #C5581A;
+    font-weight: 700;
+}
+
+#button_confira:hover {
+    height: 42px;
+    color: #ae9e9e;
+    background-color: #C5581A;
+    border-color: #C5581A;
+    font-weight: 700;
+}
+
+/* RODAPE */
+.rodape {
+    height: 130px;
+    background: #021C33;
+}
+
+.rodape_atendimento {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rodape_atendimento_telefone {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rodape_atendimento_email {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rodape_atendimento_alinhamento {
+    justify-content: left;
+}
+
+.rodape_tamanho_atendimento {
+    height: 20%;
+    width: 100%;
+}
+
+.rodape_botoes {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.rodape_col_row {
+    display: flex;
+    height: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .texto_propaganda {
+        float: left;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .img_propaganda {
+        width: 50%;
+        opacity : 0.3;
+        display: none;
+    }
+
+    .propaganda {
+        background-repeat: no-repeat;
+        background-image: url("/assets/images/Fundo 1.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity : 0.9;
+        padding: 0px;
+    }
+
+    #txt_nome_propaganda {
+        width: 95%;
+    }
+
+    #txt_nome_propaganda span {
+        font-size: 1em;
+    }
+
+    .imagem_propaganda_transparencia {
+        background-color: black;
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+    }
+}

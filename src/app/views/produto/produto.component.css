@@ -1,0 +1,89 @@
+.produto_item {
+    background-color:#EAE8E8;
+    height: 353px;
+    width: 260px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.imagem_produto_item1 {
+    width: 158px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom:10px;
+    background: url("/assets/images/Jogo 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem_produto_item2 {
+    width: 158px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom:10px;
+    background: url("/assets/images/Jogo 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nome_produto {
+    width: 80%;
+    height: 40px;
+    margin-left: 15px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4A4949;
+}
+
+.nome_produto span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4A4949;
+}
+
+.dados_produto {
+    justify-content: center;
+    width: 100%;
+}
+
+.branco_produto {
+    margin-left: 15px;
+    opacity: 0;
+    height: 18px;
+}
+
+.valor_anterior {
+    height: 18px;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: line-through;
+    color: #4A4949;
+}
+
+.valor_novo {
+    height: 18px;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4A4949;
+}
+
+.parcelamento {
+    height: 18px;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #4A4949;
+}

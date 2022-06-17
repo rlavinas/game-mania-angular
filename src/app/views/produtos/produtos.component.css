@@ -1,0 +1,58 @@
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.produto {
+    height: 380px;
+    background: rgba(28, 55, 63, 0.66);
+}
+
+.linha_carousel {
+    margin-top:15px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.produto_left {
+    display: flex;
+    float: left;
+    /*margin-left: 30px;*/
+}
+
+@media (min-width:863px) and (max-width: 1200px) {
+    .carousel-inner .carousel-item > app-produto {
+        display: none;
+    }
+    .carousel-inner .carousel-item > app-produto:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item > app-produto:nth-child(2) {
+        display: block;
+    }
+    .carousel-inner .carousel-item > app-produto:nth-child(3) {
+        display: block;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 864px) {
+    .carousel-inner .carousel-item > app-produto {
+        display: none;
+    }
+    .carousel-inner .carousel-item > app-produto:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item > app-produto:nth-child(2) {
+        display: block;
+    }
+}
+
+@media (min-width:0px) and (max-width: 576px)   {
+    .carousel-inner .carousel-item > app-produto {
+        display: none;
+    }
+    .carousel-inner .carousel-item > app-produto:first-child {
+        display: block;
+    }
+}
