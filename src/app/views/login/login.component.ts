@@ -1,3 +1,4 @@
+import { LoginService } from './../../services/login.service';
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
 import * as $ from 'jquery';
@@ -9,7 +10,7 @@ import * as $ from 'jquery';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() {
+  constructor(private loginService: LoginService) {
 
   }
 
@@ -46,11 +47,12 @@ export class LoginComponent implements OnInit {
   }
 
   efetuarLogin(): void {
+
   }
 
   envLogin(): void{
     if (this.valLogin()) {
-        $("#formLogin").submit();
+        //$("#formLogin").submit();
     };
   };
 
@@ -68,6 +70,13 @@ export class LoginComponent implements OnInit {
                 lret = false;
             }   
         }
+
+        if (lret)
+          this.loginService.login(this.userModel).subscribe((response) => {
+          if (response.statusText != "OK") {
+            $("#msgErro").html("Usuário ou senha inválida.");
+          }
+        })
     
         return (lret);
     };

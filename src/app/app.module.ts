@@ -17,6 +17,7 @@ import { LoginComponent } from './views/login/login.component';
 import { ProdutosComponent } from './views/produtos/produtos.component';
 import { ProdutoComponent } from './views/produto/produto.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { FormsModule } from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
