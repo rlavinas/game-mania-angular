@@ -2,6 +2,7 @@ import { LoginService } from './../../services/login.service';
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
 import * as $ from 'jquery';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import * as $ from 'jquery';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService) {
+  constructor(private loginService: LoginService, private router: Router) {
 
   }
 
@@ -72,11 +73,17 @@ export class LoginComponent implements OnInit {
         }
 
         if (lret)
-          this.loginService.login(this.userModel).subscribe((response) => {
-          if (response.statusText != "OK") {
-            $("#msgErro").html("Usuário ou senha inválida.");
-          }
-        })
+          this.loginService.login(this.userModel).subscribe(
+            (response) => {
+              console.log(response);
+              localStorage.setItem("nomeUsuario", response.body.user.firstname)
+              this.router.navigateByUrl("/");
+            },
+            (erro) => {
+              console.log(erro);
+              $("#msgErro").html("Usuário ou senha inválida.");
+              lret = false;
+            })
     
         return (lret);
     };

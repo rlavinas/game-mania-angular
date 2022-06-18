@@ -2,5 +2,8 @@
 
 # AO BAIXAR O PROJETO ESECUTAR 'npm install' PARA BUSCAR TODAS AS DEPENDÊNCIAS.
 
+# INSTALAR O JSON-SERVER COMO -G
+  npm install -g json-server --save-dev
+
 # PARA RODAR O SERVER DE TESTE
-  npx json-server-auth --watch db.json
+  json-server db.json -m ./node_modules/json-server-auth
