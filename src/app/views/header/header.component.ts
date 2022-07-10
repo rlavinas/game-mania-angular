@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,23 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  NomeUsuario?: string
+
+  constructor() {
+    this.NomeUsuario = <string>localStorage.getItem("nomeUsuario");  
+   }
 
   ngOnInit(): void {
+    
   }  
+
+  verifUser(): boolean {
+    this.NomeUsuario = <string>localStorage.getItem("nomeUsuario");  
+    if (localStorage.getItem('nomeUsuario') == null || localStorage.getItem('nomeUsuario') == ""){
+      return false;
+    } else {
+      return true;
+    }
+  }
 
 }

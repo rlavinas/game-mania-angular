@@ -18,7 +18,9 @@ import { ProdutosComponent } from './views/produtos/produtos.component';
 import { ProdutoComponent } from './views/produto/produto.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NewloginComponent } from './views/newlogin/newlogin.component';
+import { EditloginComponent } from './views/editlogin/editlogin.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     BannerProdutoPropagandaComponent,
     LoginComponent,
     ProdutosComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    NewloginComponent,
+    EditloginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     FormsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

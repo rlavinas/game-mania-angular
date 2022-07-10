@@ -12,9 +12,17 @@
          <a routerLink="/"><img id="img_logo" src="../assets/images/Logo Game Mania 2.png" alt="Logotipo da aplicação Game Mania"></a>
       </div>
       <div class="col-3 right">
-          <a routerLink="/"><img class="botoes_naveg" src="../assets/images/Botao Home.png" alt=""></a>
-          <a routerLink="/login"><img class="botoes_naveg" src="../assets/images/Botao Usuario.png" alt=""></a>
-          <a href="#"><img class="botoes_naveg" src="../assets/images/Botao Carrinho.png" alt=""></a>
+        <div class="acesso">
+            <div class="usuario">
+                <p><span *ngIf="verifUser()">Olá {{NomeUsuario}}</span></p>
+            </div>
+            <div class="botoes">
+            <a routerLink="/"><img class="botoes_naveg" src="../assets/images/Botao Home.png" alt=""></a>
+            <a *ngIf="!verifUser()" routerLink="/login"><img class="botoes_naveg" src="../assets/images/Botao Usuario.png" alt=""></a>
+            <a *ngIf="verifUser()" routerLink="/editlogin"><img class="botoes_naveg" src="../assets/images/Botao Usuario.png" alt=""></a>
+            <a href="#"><img class="botoes_naveg" src="../assets/images/Botao Carrinho.png" alt=""></a>
+            </div>
+        </div>
       </div>
   </div>
 </header>

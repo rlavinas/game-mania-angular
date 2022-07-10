@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "rafael.lavinas@stategrid.com.br",
+      "password": "$2a$10$zaetLPCQHe7aRm4duxZXNuXwB4sMCLMk0O5NYzcyziKuh5i1o8I02",
+      "firstname": "Rafael",
+      "lastname": "Belúcio de Carvalho",
+      "id": 1
+    },
+    {
+      "email": "rlavinas@gmail.com",
+      "password": "$2a$10$Pc5EzM1UAgGXc/AcCO4UrOEYdHss.hiHzt.KnPEqXmBlhncssapAa",
+      "firstname": "Rafael",
+      "lastname": "Lavinas",
+      "id": 2
+    },
+    {
+      "email": "rlavinas@gmai.com",
+      "password": "$2a$10$L5SIiCZ8wbTCtwsYGHcLZeZNAv4HZXeVMLO0Lj.VqkDUff9JMa6UG",
+      "firstname": "Rafael",
+      "lastname": "Ramos",
+      "id": 3
+    }
+  ]
+}

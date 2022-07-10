@@ -1,0 +1,34 @@
+<section class="container login">
+    <form id="formLogin" class="container formulario">
+          <div class="form-group" style="height:40px;"></div>
+          <div class="d-flex form-group justify-content-center" style="height:40px;"><h5>Visuaize e edite seu cadastro</h5></div>
+          <div class="d-flex form-group" style="height:50px;"><p>Tenha acesso aos seus pedidos de forma mais fácil</p></div>
+          <div class="d-flex form-group" style="height:10px;"></div>
+          <div class="form-group">
+            <label for="lblEmail">E-mail:</label>
+            <input readonly type="email" name="email" class="form-control" id="edtEmail" aria-describedby="emailHelp" placeholder="Ex. carlossilva@gmail.com" [(ngModel)]="userModel.email">
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group">
+            <label for="lblSenha">Senha:</label>
+            <input type="password" name="password" class="form-control" id="edtSenha" placeholder="" [(ngModel)]="userModel.password">
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group">
+            <label for="lblFirstNameSenha">Nome:</label>
+            <input type="text" name="firstname" class="form-control" id="edtFirstName" placeholder="" [(ngModel)]="userModel.firstname">
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group">
+            <label for="lblLastName">Sobrenome:</label>
+            <input type="text" name="lastname" class="form-control" id="edtLastName" placeholder="" [(ngModel)]="userModel.lastname">
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="d-flex justify-content-center">
+            <button type="button" (click)="editLogin()" class="btn btn-primary">Salvar</button>&nbsp;&nbsp;
+            <button type="button" (click)="logOff()" class="btn btn-primary">Sair</button>&nbsp;&nbsp;
+            <button type="button" (click)="cancelEdit()" class="btn btn-primary">Cancelar</button>
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+    </form>
+</section> 

@@ -1,7 +1,7 @@
 <section class="container login">
-    <form id="formLogin" class="container formulario" (ngSubmit)="efetuarLogin()">
+    <form id="formLogin" class="container formulario">
           <div class="form-group" style="height:40px;"></div>
-          <div class="d-flex form-group justify-content-center" style="height:40px;"><h5>Login do Cliente</h5></div>
+          <div class="d-flex form-group justify-content-center" style="height:40px;"><h5>Crie o seu cadastro</h5></div>
           <div class="d-flex form-group" style="height:50px;"><p>Tenha acesso aos seus pedidos de forma mais fácil</p></div>
           <div class="d-flex form-group" style="height:10px;"><span id="msgErro"></span></div>
           <div class="d-flex form-group" style="height:10px;"></div>
@@ -13,14 +13,22 @@
           <div class="form-group">
             <label for="lblSenha">Senha:</label>
             <input type="password" name="password" class="form-control" id="edtSenha" placeholder="" [(ngModel)]="userModel.password">
-            <a href="#"><h6>Esqueci minha senha</h6></a>
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group">
+            <label for="lblFirstNameSenha">Nome:</label>
+            <input type="text" name="firstname" class="form-control" id="edtFirstName" placeholder="" [(ngModel)]="userModel.firstname">
+          </div>
+          <div class="form-group" style="height:20px;"></div>
+          <div class="form-group">
+            <label for="lblLastName">Sobrenome:</label>
+            <input type="text" name="lastname" class="form-control" id="edtLastName" placeholder="" [(ngModel)]="userModel.lastname">
           </div>
           <div class="form-group" style="height:20px;"></div>
           <div class="d-flex justify-content-center">
-            <button type="button" (click)="envLogin()" class="btn btn-primary">Entrar</button>
+            <button type="button" (click)="newLogin()" class="btn btn-primary">Cadastrar</button>&nbsp;&nbsp;
+            <button type="button" (click)="cancelLogin()" class="btn btn-primary">Cancelar</button>
           </div>
           <div class="form-group" style="height:20px;"></div>
-          <div class="form-group" style="height:20px;"><p style="text-align:left;">Não tem cadastro?</p></div>
-          <div class="form-group" style="height:20px;"><a routerLink="/newlogin"><h6>Cadastre-se</h6></a></div>
     </form>
 </section> 

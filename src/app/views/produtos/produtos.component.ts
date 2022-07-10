@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProdutoComponent } from '../produto/produto.component';
 
 @Component({

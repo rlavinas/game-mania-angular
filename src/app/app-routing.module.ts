@@ -1,7 +1,7 @@
-import { BannerComponent } from './views/banner/banner.component';
+import { EditloginComponent } from './views/editlogin/editlogin.component';
+import { NewloginComponent } from './views/newlogin/newlogin.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './views/header/header.component';
 import { BannerProdutoPropagandaComponent } from './views/banner-produto-propaganda/banner-produto-propaganda.component';
 import { LoginComponent } from './views/login/login.component';
 
@@ -13,6 +13,14 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'newlogin',
+    component: NewloginComponent
+  },
+  {
+    path: 'editlogin',
+    component: EditloginComponent
   }
 ];
 
