@@ -1,25 +1,11 @@
 {
   "users": [
     {
-      "email": "rafael.lavinas@stategrid.com.br",
-      "password": "$2a$10$ilm1RAtNA0aWly61lzuTwOYYC74onHOEP9DzmyerVtcoq0XFK1T0C",
-      "firstname": "Raphael",
-      "lastname": "Ramos Lavinas",
-      "id": 1
-    },
-    {
       "email": "rlavinas@gmail.com",
-      "password": "$2a$10$Pc5EzM1UAgGXc/AcCO4UrOEYdHss.hiHzt.KnPEqXmBlhncssapAa",
+      "password": "$2a$10$NMFcZxevM/VppF56PPHtjuFZmAlb6lssr18d.Tf6vtBzRSNliyQLK",
       "firstname": "Rafael",
       "lastname": "Lavinas",
-      "id": 2
-    },
-    {
-      "email": "rlavinas@gmai.com",
-      "password": "$2a$10$L5SIiCZ8wbTCtwsYGHcLZeZNAv4HZXeVMLO0Lj.VqkDUff9JMa6UG",
-      "firstname": "Rafael",
-      "lastname": "Ramos",
-      "id": 3
+      "id": 1
     }
   ]
 }
