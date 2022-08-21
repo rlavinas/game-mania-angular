@@ -63,12 +63,32 @@ export class LoginComponent implements OnInit {
   valLogin(): boolean {
     var lret = true;
     var cmsg = '';
-    
-        if ($("#edtEmail").val() == "") {
+
+        /*
+         * Tratamento de SQL Injection
+         */
+
+        const lSQLWords: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
+
+        lSQLWords.forEach(word => {
+          if (this.userModel.email?.toLowerCase().includes(word)) {
+            cmsg = "Dados inválidos.";
+            lret = false;
+          }
+
+          if (this.userModel.password?.toLowerCase().includes(word)) {
+            cmsg = "Dados inválidos.";
+            lret = false;
+          }
+        });
+
+        if (lret) {
+          if ($("#edtEmail").val() == "") {
             cmsg = "Necessário informar o e-mail.";
             lret = false;
+          }
         }
-    
+
         if (lret)  {
             if ($("#edtSenha").val() == "") {
               cmsg = "Necessário informar a senha.";
